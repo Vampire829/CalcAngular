@@ -1,27 +1,32 @@
-.content{
-    display: flex;
-    align-content: center;
-   justify-content: center;
-   min-height: 200px;
-   .control{
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 200px;
+  .control {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    button{
-        outline:none;
-        border: none;
-        background: rebeccapurple;
-        font-size: 20px;
-        font-weight: bold;
-        color: white;
-        height: 50px;
-        width: 50px;
-        border-radius: 5px;
-        transition: 0.2s all;
-        &:hover{
-
-        }
-
+    button {
+      outline: none;
+      border: none;
+      background: rebeccapurple;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      height: 100px;
+      width: 100px;
+      border-radius: 5px;
+      transition: 0.2s all;
+      &:hover {
+      }
     }
-   }
+  }
+}
+.green {
+  background-color: green;
+}
+
+.default {
+  width: auto;
 }

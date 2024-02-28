@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { AppComponent } from '../app.component';
 
@@ -10,8 +10,13 @@ import { AppComponent } from '../app.component';
   styleUrl: './calc.component.scss'
 })
 
-export class CalcComponent {
+export class CalcComponent implements DoCheck {
 public counter: number =0
+public disablet: boolean = false
+
+ public ngDoCheck(): void {
+  this.disablet=this.counter===0
+}
 
 public add(){
   this.counter++

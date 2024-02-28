@@ -2,7 +2,7 @@
     <div  class="control">
         <button (click)="add()">+</button>
         <p>{{this.counter}}</p>
-        <button class="green" (click)="remove()">-</button>
+        <button [disabled]='disablet' class="green" (click)="remove()">-</button>
         <button class='default' (click)="defaultCounter()">around</button>
     </div>
 </div>
